@@ -108,7 +108,7 @@ function newCharacter(x, y)
     end
 
     function character:jump()
-        if love.keyboard.isDown(" ") then
+        if love.keyboard.isDown("up") then
             character.yVelocity = 10
             character.y = character.y - 1
             character.walking = false
